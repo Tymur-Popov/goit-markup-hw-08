@@ -1,0 +1,24 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-family: Raleway;
+  font-weight: var(--font-weight-secondary);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-font-color);
+  text-decoration: none;
+
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  animation-duration: 1000ms;
+
+  &__left-side {
+    color: var(--logo-icon-color-left);
+  }
+
+  &__right-side {
+    color: var(--logo-icon-color-right);
+  }
+}

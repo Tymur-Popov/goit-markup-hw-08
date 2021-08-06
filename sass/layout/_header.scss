@@ -1,0 +1,117 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: baseline;
+  }
+
+  &__nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-section {
+    display: flex;
+    width: 294px;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-link {
+    position: relative;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+    padding-top: 32px;
+    padding-bottom: 36.5px;
+
+    transition: color var(--main-duration) var(--timing-function);
+
+    &.current::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 4px;
+      bottom: 0;
+
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 4px;
+      bottom: 0;
+
+      background-color: var(--accent-color);
+      border-radius: 2px;
+
+      transform: scaleX(0);
+      transition: transform var(--main-duration) var(--timing-function);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transform: scaleX(1);
+    }
+
+    &.current {
+      color: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.info {
+  display: flex;
+  margin-left: auto;
+
+  &__point:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    transition: fill var(--main-duration) var(--timing-function);
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-info-color);
+
+  fill: var(--header-info-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color var(--main-duration) var(--timing-function);
+
+  &:hover,
+  &:hover {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}

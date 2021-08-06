@@ -1,0 +1,71 @@
+.team {
+  background: var(--team-back-color);
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__point {
+    display: block;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+
+    &:not(last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__member-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &_social-list {
+    margin-top: 16px;
+    width: 206px;
+    height: 44px;
+  }
+
+  &__social-link {
+    background-color: transparent;
+    fill: #afb1b8;
+
+    &:focus,
+    &:hover {
+      background-color: var(--accent-color);
+      fill: #ffffff;
+    }
+  }
+
+  &__member-name {
+    display: inline-block;
+
+    font-size: 16px;
+    font-weight: var(--font-weight-member);
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__member-profession {
+    display: inline-block;
+    margin-top: 10px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+  }
+}
