@@ -1,16 +1,19 @@
 .qualities {
-  display: flex;
+  // display: flex;
 
   &__list {
-    display: flex;
+    // display: flex;
   }
 
   &__point {
     display: block;
-    width: 270px;
+    width: 100%;
 
+    // &:not(last-child) {
+    //   margin-right: 30px;
+    // }
     &:not(last-child) {
-      margin-right: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -20,15 +23,16 @@
     justify-content: center;
     margin-bottom: 30px;
     border-radius: 4px;
-    width: 270px;
+    width: 100%;
     height: 120px;
 
     background-color: #f5f4fa;
   }
 
   &__name {
-    display: inline-block;
-    margin-bottom: 9px;
+    // display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
 
     font-size: 14px;
     font-weight: var(--font-weight-secondary);

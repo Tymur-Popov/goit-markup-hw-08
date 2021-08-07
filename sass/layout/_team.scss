@@ -2,12 +2,12 @@
   background: var(--team-back-color);
 
   &__section {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
   }
 
   &__list {
-    display: flex;
+    // display: flex;
   }
 
   &__point {
@@ -18,7 +18,8 @@
     background-color: #ffffff;
 
     &:not(last-child) {
-      margin-right: 30px;
+      // margin-right: 30px;
+      margin-bottom: 30px;
     }
   }
 
