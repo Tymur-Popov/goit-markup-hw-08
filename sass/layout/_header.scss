@@ -2,6 +2,7 @@
   border-bottom: 1px solid #ececec;
 
   &__section {
+    position: relative;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -16,6 +17,21 @@
   &__menu-section {
     display: flex;
     width: 294px;
+
+    @media screen and (max-width: 767px) {
+      position: absolute !important;
+      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0 !important;
+      border: 0 !important;
+      height: 1px !important;
+      width: 1px !important;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-left: 88px;
+    }
   }
 
   &__menu {
@@ -28,8 +44,15 @@
     letter-spacing: 0.02em;
     color: #212121;
 
-    padding-top: 32px;
-    padding-bottom: 36.5px;
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+      padding-bottom: 33px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     transition: color var(--main-duration) var(--timing-function);
 
@@ -84,8 +107,32 @@
   display: flex;
   margin-left: auto;
 
-  &__point:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-left: -30px;
+  }
+
+  &__point {
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
   }
 
   &__icon {
@@ -98,14 +145,27 @@
   display: flex;
   align-items: center;
 
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-info-color);
 
   fill: var(--header-info-color);
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 767px) {
+    padding-bottom: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   transition: color var(--main-duration) var(--timing-function);
 
@@ -113,5 +173,26 @@
   &:hover {
     color: var(--accent-color);
     fill: var(--accent-color);
+  }
+}
+
+.mobile-menu-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rebeccapurple;
+
+  top: 10px;
+  right: 15px;
+
+  @media screen and (min-width: 767px) {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
   }
 }

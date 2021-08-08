@@ -46,8 +46,7 @@
     text-transform: uppercase;
     color: var(--hero-header-color);
 
-    @media screen and (min-width: 1200) {
-      color: red;
+    @media screen and (min-width: 1200px) {
       display: inline-block;
       width: 696px;
       line-height: 1.36;

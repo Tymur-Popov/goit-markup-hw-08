@@ -29,4 +29,10 @@
 
   transition: background-color var(--main-duration) var(--timing-function),
     fill var(--main-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: #ffffff;
+    background-color: var(--accent-color);
+  }
 }

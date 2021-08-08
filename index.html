@@ -27,7 +27,7 @@
 
   <body>
     <!--HEADER-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__section container">
         <nav class="header__nav">
           <div class="header__nav-container">
@@ -69,8 +69,11 @@
             </a>
           </li>
         </ul>
+        <button class="mobile-menu-button">
+          
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!--HERO-->
@@ -144,7 +147,7 @@
       </section>
 
       <!--OUR-TASKS-->
-      <!-- <section class="tasks section">
+      <section class="tasks">
         <div class="tasks__container container">
           <h2 class="tasks__header">Чем мы занимаемся</h2>
           <ul class="tasks__list">
@@ -183,7 +186,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--TEAM-->
       <section class="team section">
@@ -191,12 +194,12 @@
           <h2 class="section-header">Наша команда</h2>
           <ul class="team__list">
             <li class="team__point">
-              <img
-                src="./images/staff/ihor-demyanenko.jpg"
-                alt="игорь демьяненко"
-                width="270"
-                height="260"
-              />
+              <div class="team__img-wrapper">
+                <img src="./images/staff/ihor-demyanenko-desktop(x1).jpg" 
+                alt="игорь демьяненко" 
+                width="270" 
+                height="260" />
+              </div>
               <div class="team__member-box">
                 <h3 class="team__member-name">Игорь Демьяненко</h3>
                 <p class="team__member-profession" lang="en">
@@ -236,7 +239,7 @@
             </li>
             <li class="team__point">
               <img
-                src="./images/staff/olha-repina.jpg"
+                src="./images/staff/olha-repina-desktop(x1).jpg"
                 alt="ольга репина"
                 width="270"
                 height="260"
@@ -280,7 +283,7 @@
             </li>
             <li class="team__point">
               <img
-                src="./images/staff/nicolay-tarasov.jpg"
+                src="./images/staff/nicolay-tarasov-desktop(x1).jpg"
                 alt="николай тарасов"
                 width="270"
                 height="260"
@@ -322,7 +325,7 @@
             </li>
             <li class="team__point">
               <img
-                src="./images/staff/mikhail-ermakov.jpg"
+                src="./images/staff/mikhail-ermakov-desktop(x1).jpg"
                 alt="михаил ермаков"
                 width="270"
                 height="260"
@@ -421,7 +424,7 @@
 
     <!--FOOTER-->
 
-    <!-- <footer class="footer footer-section">
+    <footer class="footer footer-section">
       <div class="container footer__container">
         <div class="footer__address-box">
           <a class="logo footer__logo" href="./"
@@ -506,11 +509,11 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- BACKDROP И МОДАЛЬНОЕ ОКНО -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal_close-btn" data-modal-close>
           <svg class="modal__close-icon" width="18" height="18">
@@ -601,6 +604,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
