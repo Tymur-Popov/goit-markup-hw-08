@@ -1525,10 +1525,10 @@ li {
 }
 
 .portfolio-point {
-  transition: box-shadow 250ms linear;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  transition: box-shadow 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -1567,12 +1567,13 @@ li {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .portfolio-project {
   margin-bottom: 4px;
   font-weight: var(--font-weight-secondary);
-  font-size: 17px;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-font-color);
@@ -1619,5 +1620,13 @@ li {
 .portfolio-project-link:focus .portfolio-overlay {
   transform: translateY(0%);
   animation-timing-function: var(--timing-function);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-project-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
