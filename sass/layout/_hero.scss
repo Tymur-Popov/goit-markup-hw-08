@@ -7,7 +7,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url();
+    url(../images/mobile/hero/hero-bg-mobile.jpg);
   background-size: cover;
   background-color: #2f303a;
 
@@ -57,7 +57,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/mobile/hero/hero-bg-mobile@2x.jpg);
   }
 }
 
@@ -68,7 +68,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/tablet/hero/hero-bg-tablet.jpg);
   }
 }
 
@@ -80,7 +80,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/tablet/hero/hero-bg-tablet@2x.jpg);
   }
 }
 
@@ -92,7 +92,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/desktop/hero/hero-bg.jpg);
 
     &__header {
       max-width: 696px;
@@ -110,6 +110,6 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/desktop/hero/hero-bg@2x.jpg);
   }
 }

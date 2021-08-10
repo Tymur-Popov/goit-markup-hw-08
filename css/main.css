@@ -301,8 +301,8 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -328,6 +328,20 @@ li {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+  }
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -336,18 +350,18 @@ li {
 .modal-form__header {
   font-family: var(--main-font);
   font-weight: var(--font-weight-secondary);
+  margin-bottom: 12px;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 12px;
 }
 
 .modal-form__field {
   font-family: var(--main-font);
   font-weight: var(--font-weight-modal-label);
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 10px;
@@ -413,11 +427,12 @@ li {
   align-items: center;
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .modal-form__checkbox-label::before {
@@ -454,11 +469,22 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 55px;
-  margin-top: 30px;
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-label {
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .modal-form__checkbox-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .header {
@@ -821,7 +847,7 @@ li {
   padding: 118px 0;
   text-align: center;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url();
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero/hero-bg-mobile.jpg);
   background-size: cover;
   background-color: #2f303a;
 }
@@ -860,26 +886,26 @@ li {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), (min-resolution: 192dpi) and (min-width: 280px), (min-resolution: 2dppx) and (min-width: 280px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url();
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero/hero-bg-mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url();
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/hero-bg-tablet.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url();
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/hero-bg-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url();
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero/hero-bg.jpg);
   }
   .hero__header {
     max-width: 696px;
@@ -890,7 +916,7 @@ li {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url();
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero/hero-bg@2x.jpg);
   }
 }
 
@@ -1546,7 +1572,7 @@ li {
 .portfolio-project {
   margin-bottom: 4px;
   font-weight: var(--font-weight-secondary);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-font-color);

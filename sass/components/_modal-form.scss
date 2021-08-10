@@ -5,19 +5,18 @@
   &__header {
     font-family: var(--main-font);
     font-weight: var(--font-weight-secondary);
+    margin-bottom: 12px;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-
-    margin-bottom: 12px;
   }
 
   &__field {
     font-family: var(--main-font);
     font-weight: var(--font-weight-modal-label);
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     letter-spacing: 0.01em;
 
     color: #757575;
@@ -98,13 +97,14 @@
     align-items: center;
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
     color: #757575;
 
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 
     &::before {
       display: block;
@@ -145,11 +145,23 @@
     letter-spacing: 0.06em;
 
     padding: 10px 55px;
-    margin-top: 30px;
 
     background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-label {
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .modal-form__checkbox-link {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
