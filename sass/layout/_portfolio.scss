@@ -1,21 +1,43 @@
-.portfolio {
-  width: 100%;
-}
-
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .portfolio-point {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 480px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // width: 480px;
   transition: box-shadow 250ms linear;
 
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 0;
+  }
+}
+
+.portfolio-point:nth-last-child(n + 4) {
+  margin-bottom: 30px;
 }
 
 .portfolio-project-link {
@@ -26,14 +48,6 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-// .portfolio-point:not(:nth-child(3n + 3)) {
-//   margin-right: 30px;
-// }
-
-// .portfolio-point:nth-last-child(n + 4) {
-//   margin-bottom: 30px;
-// }
 
 .project-info {
   width: 100%;

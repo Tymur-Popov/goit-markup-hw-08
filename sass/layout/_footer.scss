@@ -15,6 +15,7 @@
     }
     @media screen and (min-width: 1200px) {
       width: 1200px;
+      display: flex;
       flex-direction: row;
     }
   }
@@ -23,6 +24,10 @@
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
     }
   }
 
@@ -87,6 +92,11 @@
     @media screen and (min-width: 768px) {
       margin-left: 61px;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+      align-items: flex-start;
+    }
   }
 
   &__social-box {
@@ -104,8 +114,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-      margin-top: 72px;
       margin-left: 70px;
+      align-items: flex-start;
     }
   }
 
@@ -142,8 +152,9 @@
     }
 
     @media screen and (min-width: 1200px) {
-      margin-top: 72px;
       margin-left: auto;
+      margin-top: 0;
+      align-items: flex-start;
     }
   }
 
@@ -193,6 +204,7 @@
     @media screen and (min-width: 1200px) {
       width: 358px;
       height: 50px;
+      margin-bottom: 0;
     }
 
     border: 1px solid rgba(255, 255, 255, 0.3);

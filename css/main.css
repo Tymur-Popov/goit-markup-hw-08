@@ -240,6 +240,13 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .filter_section {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
 .filter_point {
   margin-top: 15px;
 }
@@ -466,6 +473,12 @@ li {
   align-items: baseline;
 }
 
+@media screen and (min-width: 768px) {
+  .header__section {
+    align-items: stretch;
+  }
+}
+
 .header__nav-container {
   display: flex;
   align-items: center;
@@ -518,7 +531,7 @@ li {
 @media screen and (min-width: 1200px) {
   .header__menu-link {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 35px;
   }
 }
 
@@ -584,7 +597,6 @@ li {
 @media screen and (min-width: 768px) {
   .info {
     flex-direction: column;
-    margin-left: auto;
     margin-top: 21px;
   }
 }
@@ -592,13 +604,8 @@ li {
 @media screen and (min-width: 1200px) {
   .info {
     flex-direction: row;
-    margin-left: -30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .info__point {
-    margin-left: 30px;
+    margin-top: 0;
+    margin-left: auto;
   }
 }
 
@@ -664,6 +671,19 @@ li {
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info__point:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info__point:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1081,6 +1101,7 @@ li {
 @media screen and (min-width: 1200px) {
   .footer__container {
     width: 1200px;
+    display: flex;
     flex-direction: row;
   }
 }
@@ -1089,6 +1110,12 @@ li {
   .footer__tablet-box {
     display: flex;
     justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__tablet-box {
+    display: flex;
   }
 }
 
@@ -1155,6 +1182,13 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__address-box {
+    margin-left: 0;
+    align-items: flex-start;
+  }
+}
+
 .footer__social-box {
   display: flex;
   flex-direction: column;
@@ -1174,8 +1208,8 @@ li {
 
 @media screen and (min-width: 1200px) {
   .footer__social-box {
-    margin-top: 72px;
     margin-left: 70px;
+    align-items: flex-start;
   }
 }
 
@@ -1214,8 +1248,9 @@ li {
 
 @media screen and (min-width: 1200px) {
   .footer__mailing-container {
-    margin-top: 72px;
     margin-left: auto;
+    margin-top: 0;
+    align-items: flex-start;
   }
 }
 
@@ -1273,6 +1308,7 @@ li {
   .footer__user-mail-input {
     width: 358px;
     height: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -1327,23 +1363,42 @@ li {
   margin-left: 10px;
 }
 
-.portfolio {
-  width: 100%;
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .portfolio-point {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 480px;
   transition: box-shadow 250ms linear;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-point {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-point {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 0;
+  }
+}
+
+.portfolio-point:nth-last-child(n + 4) {
+  margin-bottom: 30px;
 }
 
 .portfolio-project-link {

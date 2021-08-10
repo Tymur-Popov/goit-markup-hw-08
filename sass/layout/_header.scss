@@ -7,6 +7,10 @@
     margin-left: auto;
     margin-right: auto;
     align-items: baseline;
+
+    @media screen and (min-width: 768px) {
+      align-items: stretch;
+    }
   }
 
   &__nav-container {
@@ -51,7 +55,7 @@
 
     @media screen and (min-width: 1200px) {
       padding-top: 32px;
-      padding-bottom: 32px;
+      padding-bottom: 35px;
     }
 
     transition: color var(--main-duration) var(--timing-function);
@@ -120,19 +124,13 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: column;
-    margin-left: auto;
     margin-top: 21px;
   }
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    margin-left: -30px;
-  }
-
-  &__point {
-    @media screen and (min-width: 1200px) {
-      margin-left: 30px;
-    }
+    margin-top: 0;
+    margin-left: auto;
   }
 
   &__icon {
@@ -194,5 +192,18 @@
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info__point:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info__point:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
