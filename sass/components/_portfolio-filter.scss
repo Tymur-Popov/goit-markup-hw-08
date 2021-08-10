@@ -1,10 +1,19 @@
 .filter_section {
+  margin-bottom: 40px;
+
   display: flex;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: left;
+  flex-wrap: wrap;
+
+  margin-top: -15px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.filter_point {
+  margin-top: 15px;
 }
 
 .filter_point:not(:last-child) {
@@ -15,7 +24,7 @@
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
@@ -26,6 +35,9 @@
   border-radius: 4px;
 
   padding: 6px 22px 6px 22px;
+
+  cursor: pointer;
+
   transition: box-shadow var(--main-duration) var(--timing-function),
     background-color var(--main-duration) var(--timing-function),
     color var(--main-duration) var(--timing-function);
