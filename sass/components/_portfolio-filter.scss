@@ -19,6 +19,10 @@
 
 .filter_point {
   margin-top: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .filter_point:not(:last-child) {
